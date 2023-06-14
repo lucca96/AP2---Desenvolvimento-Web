@@ -45,7 +45,8 @@
 }
 
 body {
-    display: flex;
+
+    display: grid;
     flex-wrap: wrap;
     background-image: url('imagem.jpg');
     background-attachment: fixed;
@@ -56,6 +57,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
   }
 
 
@@ -97,4 +99,21 @@ h2 {
 
 #btn-voltar:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .player-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-card {
+        width: 100%;
+    }
+}
+
+/* Mídia Query para dispositivos de até 480px */
+@media (max-width: 480px) {
+    .player-list {
+        grid-template-columns: 1fr;
+    }
 }
