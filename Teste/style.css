@@ -1,0 +1,42 @@
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.player-card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.player-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.player-card h3 {
+    margin-top: 10px;
+}
+
+.player-card p {
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url('imagem.jfif');
+    background-size: cover;
+    background-position: center;
+  }
+
+.player-details {
+    color: black
+  }
