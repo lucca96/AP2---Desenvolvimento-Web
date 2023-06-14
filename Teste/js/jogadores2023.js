@@ -715,8 +715,9 @@ function createPlayerCard(player) {
 }
 
 function showPlayerDetails(player) {
-    window.location.href = `detalhes.html?player=${encodeURIComponent(JSON.stringify(player))}`;
-}
+    localStorage.setItem('selectedPlayer', JSON.stringify(player));
+    window.location.href = 'detalhes.html';
+  }
 
 function populatePlayerList(elenco) {
     const playerList = document.getElementById(elenco === 'feminino' ? 'female-players' : 'male-players');
